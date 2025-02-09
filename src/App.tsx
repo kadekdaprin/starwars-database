@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { RoutesCollection } from "./routes/RoutesCollection.tsx";
 import Layout from "./components/layout/Layout.tsx";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <Routes>
           {RoutesCollection.map((route, i) => (
@@ -18,7 +18,7 @@ function App() {
           ))}
         </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
