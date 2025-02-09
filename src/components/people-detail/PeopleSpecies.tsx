@@ -21,8 +21,8 @@ const PeopleSpecies = ({ className, speciesList }: PeopleSpeciesProps) => {
       <div className="mt-2">
         <Row xs={1} sm={2} md={3} lg={4}>
           {speciesList.map((species, i) => (
-            <Col className="p-2">
-              <PeopleSpeciesItem key={i} id={getIdFromUrl(species)} />
+            <Col key={i} className="p-2">
+              <PeopleSpeciesItem id={getIdFromUrl(species)} />
             </Col>
           ))}
         </Row>

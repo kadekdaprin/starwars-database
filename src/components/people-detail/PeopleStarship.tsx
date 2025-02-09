@@ -21,8 +21,8 @@ const PeopleStarship = ({ className, starships }: PeopleStarshipProps) => {
       <div className="mt-2">
         <Row xs={1} sm={2} md={3} lg={4}>
           {starships.map((starship, i) => (
-            <Col className="p-2">
-              <PeopleStarshipItem key={i} id={getIdFromUrl(starship)} />
+            <Col key={i} className="p-2">
+              <PeopleStarshipItem id={getIdFromUrl(starship)} />
             </Col>
           ))}
         </Row>

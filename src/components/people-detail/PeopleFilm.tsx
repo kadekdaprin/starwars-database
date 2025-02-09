@@ -21,8 +21,8 @@ const PeopleFilm = ({ className, films }: PeopleFilmProps) => {
       <div className="mt-2">
         <Row xs={1} sm={2} md={3} lg={4}>
           {films.map((film, i) => (
-            <Col className="p-2">
-              <PeopleFilmItem key={i} id={getIdFromUrl(film)} />
+            <Col key={i} className="p-2">
+              <PeopleFilmItem id={getIdFromUrl(film)} />
             </Col>
           ))}
         </Row>
