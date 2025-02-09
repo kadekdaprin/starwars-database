@@ -77,10 +77,9 @@ const PeopleList = () => {
             <div>
               {isShowPrevious && (
                 <Button
-                  className="rounded"
+                  className="rounded btn-page-navigation"
                   aria-label="Previous"
                   onClick={previousPageHandler}
-                  style={{ width: "86px" }}
                   variant="outline-info"
                 >
                   Previous
@@ -93,10 +92,9 @@ const PeopleList = () => {
             <div>
               {isShowNext && (
                 <Button
-                  className="rounded"
+                  className="rounded btn-page-navigation"
                   aria-label="Next"
                   onClick={nextPageHandler}
-                  style={{ width: "86px" }}
                   variant="outline-info"
                 >
                   Next

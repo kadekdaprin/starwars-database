@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import { Starship } from "../../types/Starship";
-import {
-  getStarshipById,
-  getVehicleById,
-} from "../../services/SwapiService.ts";
+import { getVehicleById } from "../../services/SwapiService.ts";
 import { ErrorState } from "../../types/Errorstate.tsx";
 import LoadingSpinner from "../ui/LoadingSpinner.tsx";
 

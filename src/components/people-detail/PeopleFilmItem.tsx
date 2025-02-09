@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Card } from "react-bootstrap";
 import { Film } from "../../types/Film";
 import { getFilmById } from "../../services/SwapiService.ts";
